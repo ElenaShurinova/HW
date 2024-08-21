@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header {
+    
+    background-color: #4a3b35;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+header button,
+.pricing-text button {
+    background-color: #d6654a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.pricing-text button:hover {
+    background-color: #c0543a;
+}
+
+.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* .products {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end; Выровнять по правой стороне */
+/* } */
+
+/* .product-item {
+    /* text-align: center; */
+    /* display: grid; */
+    /* grid-template-columns: repeat(2, 1fr); Два столбца */
+    /* gap: 20px; */
+    /* max-width: 400px; Ширина для выравнивания по правой стороне */ */
+   
+/* } */
+
+.product-item img {
+    /* display: flex;
+    justify-content: flex-end;  */
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    width: 100%;
+    /* max-width: 200px;
+    height: auto;
+    /* display: block; */
+    /* margin: 0 auto; */ 
+}
+
+.pricing {
+    display: flex;
+    padding: 20px;
+   
+}
+
+.pricing-text {
+    flex: 1;
+    padding: 20px;
+    font-weight: 600;
+    font-size: 53px;
+    width: 430px;
+}
+
+.pricing-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
