@@ -17,6 +17,7 @@ header {
     color: white;
 }
 
+
 header button,
 .pricing-text button {
     background-color: #d6654a;
@@ -26,7 +27,12 @@ header button,
     margin-top: 10px;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 30px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
 }
 
 .pricing-text button:hover {
@@ -39,11 +45,18 @@ header button,
 }
 
 
-/* .products {
+.products {
     padding: 20px;
-    display: flex;
-    justify-content: flex-end; Выровнять по правой стороне */
-/* } */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* justify-content: flex-end; Выровнять по правой стороне */ 
+}
+
+.product-item1 {
+    grid-row: 1/5;
+    width: 50%;
+
+}
 
 /* .product-item {
     /* text-align: center; */
@@ -54,13 +67,20 @@ header button,
    
 /* } */
 
+.product-grid {
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 200px);
+
+
+}
+
 .product-item img {
     /* display: flex;
     justify-content: flex-end;  */
-    display: grid; 
+    /* display: grid; 
     grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-    width: 100%;
+    gap: 20px;  */
+    /* max-width: 100%; */
     /* max-width: 200px;
     height: auto;
     /* display: block; */
